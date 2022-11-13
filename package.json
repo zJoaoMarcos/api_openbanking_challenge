@@ -2,15 +2,15 @@
   "name": "api-openbanking-challenge",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "build": "tsc",
     "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
     "start": "node build/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@prisma/client": "^4.6.1",
     "axios": "^1.1.3",

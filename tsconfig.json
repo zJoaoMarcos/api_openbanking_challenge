@@ -5,7 +5,9 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "rootDir": "./src",
+    "outDir": "./build"
   },
   "include": ["src/**/*.ts"]
 }
