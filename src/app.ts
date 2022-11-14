@@ -14,7 +14,7 @@ app.use(router);
 
 app.use(
   (error: Error, request: Request, response: Response, next: NextFunction) => {
-    return response.json({
+    return response.status(400).send({
       status: "Error",
       message: error.message,
     });
