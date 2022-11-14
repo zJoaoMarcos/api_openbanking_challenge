@@ -17,7 +17,7 @@ class AuthenticateUserUseCase {
       throw new Error("User or password incorrect");
     }
 
-    const passwordMatch = compare(password, userAlreadyExists.password);
+    const passwordMatch = await compare(password, userAlreadyExists.password);
 
     if (!passwordMatch) {
       throw new Error("User or password incorrect");
